@@ -1,3 +1,4 @@
+
 # Comprehensive sample .gitignore file for reference 
 
 #############################################
@@ -34,7 +35,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 ### Ruby ###
 *.gem
 *.rbc
@@ -54,10 +54,14 @@ Temporary Items
 /doc/
 /rdoc/
 
-## Environment normalisation:
+## Environment normalization:
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
+
+# these should all be checked in to normalize the environment (exception: for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments):
+# Gemfile.lock, .ruby-version, .ruby-gemset
 
 ### Rails ###
 capybara-*.html
@@ -70,13 +74,31 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+config/secrets.yml
+
+# TODO Comment out this rule if environment variables can be committed
+.env
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore Byebug command history file.
 .byebug_history
+
+### Node ###
 
 ## Webpack:
 /app/assets/javascripts/bundle.js
 /app/assets/javascripts/bundle.js.map
-
-### Node ###
 
 # Logs
 logs
@@ -103,5 +125,5 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directory
+# Ignore node_modules (commenting this out is preferred by some people)
 node_modules
