@@ -23,7 +23,7 @@
 'Ignore NPM'
 ===================================================================
 
-node_modules/         ;bc when run npm install, it'll refetch all the modules specified in package.json ---
+node_modules/         ;bc when run npm install, it'll refetch all the modules specified in package.json and create a new node_modules/ to store them in locally
 bundle.js             ;bc ignore compiled code & regenerates when run `webpack`
 bundle.js.map         ;bc ignore compiled code & regenerates when run `webpack` 
 
