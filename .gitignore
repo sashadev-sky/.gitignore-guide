@@ -1,5 +1,9 @@
 # Comprehensive sample .gitignore file for reference 
 
+#############################################
+# compiled from github.com/github/gitignore #
+#############################################
+
 ### Custom ###
 *.db
 *.sqlite
