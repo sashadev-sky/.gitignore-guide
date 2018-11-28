@@ -1,12 +1,10 @@
-# sample .gitignore file to reference 
+# Comprehensive sample .gitignore file for reference 
 
 ### Custom ###
-# *<file_name>: match any file ending in .db and .sqlite in any directory
 *.db
 *.sqlite
 
 ### OSX ###
-## <file_name>: any .DS_Store in any directory
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -34,9 +32,6 @@ Temporary Items
 
 
 ### Ruby ###
-# /<file_name>: matches files only in the repository root
-# /<dir_name>/: matches entire contents (files and subdir) of dir in the repository root with <folder_name>
-# /<dir_name>/<file_name>/ : Patterns specifying a file in a particular directory are relative to the repository root. (You can prepend a slash if you like, but it doesn't do anything special.)
 *.gem
 *.rbc
 /.config
