@@ -21,41 +21,41 @@ A `gitignore` file specifies intentionally untracked files or directories that G
 Common Patterns for Node/Rails:
 
   * _this is not .gitignore file syntax - just has the patterns and mimics general layout_
-```JS
+```Julia
 
 Ignore NPM
 ===================================================================
 
-node_modules/    /* npm install refetches all modules specified in package.json & create a new node_modules/ to store them in locally */
-bundle.js           /*ignore compiled code & regenerates when run `webpack`*/
-bundle.js.map       /*ignore compiled code & regenerates when run `webpack`*/ 
+node_modules/       # npm install refetches modules specified in package.json & creates new node_modules/ to store them in locally
+bundle.js           # ignore compiled code & regenerates when run `webpack`
+bundle.js.map       # ignore compiled code & regenerates when run `webpack`
 
 
 Files Generated at Runtime
 ===================================================================
 
-log/                /*matches any dirs (and contents) named 'log' anywhere in path*/
-/tmp/               /*matches any dirs (and contents) named 'tmp' only from repo root*/
-*.db                ;matches any files (or dirs) ending in .db anywhere in path
+log/                # matches any dirs (and contents) named 'log' anywhere in path
+/tmp/               # matches any dirs (and contents) named 'tmp' only from repo root
+*.db                # matches any files (or dirs) ending in .db anywhere in path
 *.sqlite
-pids                ;matches any files or dirs named 'pids' anywhere in path     
+pids                # matches any files or dirs named 'pids' anywhere in path  
 *.pid
 
 
-'Hidden System Files'   
+Hidden System Files   
 ==================================================================
 
-.DS_Store            ;often see files starting with '.'
+.DS_Store            # often see files starting with '.'
 
 
-'Environment Normalization'   
+Environment Normalization  
 ==================================================================
 
-/.bundle/           ;but dirs can start with '.' too
-/vendor/bundle      ;chained paths are always relative to repo root, prepended '/' not neccessary but explicit
+/.bundle/           # but dirs can start with '.' too
+/vendor/bundle      # chained paths are always relative to repo root, prepended '/' not neccessary but explicit
 
 
-'Rails'
+Rails
 ==================================================================
 
 .byebug_history
