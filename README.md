@@ -20,7 +20,8 @@ A `gitignore` file specifies intentionally untracked files or directories that G
 
 Common Patterns for Node/Rails:
 
-  * _this is not .gitignore file syntax - just has the patterns and mimics general layout_
+  * _note: styled for visual convenience_
+
 ```Julia
 
 Ignore NPM
@@ -65,7 +66,7 @@ Rails
 
 ---
 
-[More comprehensive .gitignore](../master/.gitignore)
+[More comprehensive .gitignore](../master/.gitignore.md)
 
 ---
 ## Fundamentals: 
