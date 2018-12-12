@@ -258,22 +258,10 @@ $ git commit -m "Start ignoring debug.log"
 
 <hr>
 
-### Restrictions
-
-* Files included with the `package.json#files` field cannot be excluded through .gitignore
-
-* Certain files are always included, regardless of settings:
-
-package.json README CHANGES / CHANGELOG / HISTORY LICENSE / LICENCE NOTICE The file in the "main" field
-
-
-
-<hr>
-
 ### Debugging .gitignore files
 To track down why a particular file is being ignored - use **`git check-ignore `** with the **`-v`** (or **`--verbose`**) option to determine which pattern is causing a particular file / directory to be ignored:
 
-```Bash
+```bash
 
 $ git check-ignore -v debug.log
 .gitignore:3:*.log debug.log
@@ -281,7 +269,7 @@ $ git check-ignore -v debug.log
 ```
 The output shows:
 
-```ERB
+```erb
 
 <file containing the pattern> : <line number of the pattern> : <pattern> <file name>
 
