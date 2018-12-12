@@ -1,6 +1,3 @@
-
-# Comprehensive sample .gitignore file for reference 
-
 #############################################
 # compiled from github.com/github/gitignore #
 #############################################
@@ -59,8 +56,7 @@ Temporary Items
 /vendor/bundle
 /lib/bundler/man/
 
-# these should all be checked in to normalize the environment (exception: for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments):
+# these should all be checked in to normalize the environment (exception: for a library or gem, you might want to ignore these files since the code is intended to run in multiple environments):
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
 ### Rails ###
@@ -94,7 +90,8 @@ config/secrets.yml
 # Ignore Byebug command history file.
 .byebug_history
 
-### Node ###
+# Ignore node_modules (commenting this out is preferred by some people)
+node_modules
 
 ## Webpack:
 /app/assets/javascripts/bundle.js
@@ -124,6 +121,3 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-
-# Ignore node_modules (commenting this out is preferred by some people)
-node_modules
