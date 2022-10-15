@@ -98,9 +98,6 @@ Rails
 Git commands such as `git status` and `git add` then use these constructed patterns. 
 - Note the `.gitignore` file is actually 1 of multiple sources where Git checks gitignore patterns from. 
 
-- http://web.mit.edu/git/www/gitignore.html
-
-
 ## Metacharacters and Common Patterns
 
 _Assumptions_:
