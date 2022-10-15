@@ -71,7 +71,7 @@ Rails
 ---
 ## Fundamentals: 
 
-- `$ touch .gitignore` - file can only be created manually
+- For per project configurations, `$ touch .gitignore` to set up a file in your PWD
 
 - Each line specifies a pattern for the path to ignore.
 
@@ -272,6 +272,30 @@ The output shows:
 <file containing the pattern> : <line number of the pattern> : <pattern> <file name>
 
 ```
+ 
+ <hr>
+
+### Setting up a global .gitignore
+ 
+To set up a file in your home directory for global configurations:
+ 
+```bash
+ 
+ $ touch ~/.gitignore
+ 
+ ```
+ 
+You’ll probably have at least two entries two entries to add:
+1. One for operating system-specific files,
+2. One for editor-specific files.
+
+Once you update it, save and finally configure git to use it:
+ 
+```bash
+ 
+ $ git config --global core.excludesfile ~/.gitignore
+ 
+ ```
 
 <hr>
 
